@@ -1,0 +1,59 @@
+/*--------------------------------
+React time picker dropdown
+------------------------------*/
+
+
+/* Global styles */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin !important;
+  scrollbar-color: #202020 #0002;
+}
+*::-webkit-scrollbar{
+  display: block!important;
+  width: 6px;
+  height: 6px;
+  background-color: #0002;
+}
+*::-webkit-scrollbar-thumb{
+  border-radius: 12px!important;
+  background-color: #202020;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+body{
+  background-color: #EEEEEE;
+  color: #202020;
+  font-family: 'Jost', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif !important;
+  overflow-x: hidden;
+}
+button{
+  width: max-content;
+  height: max-content;
+  border: none;
+  background-color: #fff0;
+}
+input, textarea{
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background-color: #fff0;
+  color: #202020;
+}
+button, input, a{
+  font-family: 'Jost', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif !important;
+}
+a{
+  color: #FF577F;
+  transition: 0.3s ease;
+}
+a:hover{
+  color: #FF74B1;
+}

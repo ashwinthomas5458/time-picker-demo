@@ -1,0 +1,218 @@
+.tp-main-wrapper{
+    background-color: #EEE;
+    color: #202020;
+}
+.tp-header-wrap{
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.tp-container{
+    width: 80vw;
+}
+.tp-nav-bar{
+    padding: 32px 0;
+    box-shadow: 8px 8px 16px #0000;
+    background-color: #EEE0;
+    transition: 0.35s ease;
+}
+.tp-nav-active{
+    background-color: #EEE;
+    box-shadow: 8px 8px 16px #0001;
+}
+.tp-nav-link{
+    cursor: pointer;
+}
+.tp-nav-link path.t-logo-bg{
+    opacity: 0;
+    transition: 0.3s ease-in;
+}
+.tp-nav-link:hover path.t-logo-bg{
+    opacity: 1;
+}
+.tp-cover-container{
+    min-height: 100vh;
+    z-index: 1;
+}
+h1.tp-title{
+    font-size: clamp(32px, 4.4vw, 64px);
+    line-height: 150%;
+    font-weight: 700;
+}
+h3.tp-title{
+    font-size: clamp(20px, 2.2vw, 32px);
+    line-height: 150%;
+    font-weight: 700;
+}
+.tp-cover-container h1.tp-title{
+    font-weight: 800;
+}
+.tp-cover-container h3.tp-title{
+    font-weight: 600;
+}
+.tp-btn{
+    padding: 16px 48px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.35s ease-in;
+    text-decoration: none;
+    box-shadow: 8px 8px 16px #DFF6FF40;
+}
+.tp-btn:hover{
+    color: #202020;
+    box-shadow: 8px 8px 16px #DFF6FF5A;
+}
+.tp-primary-btn{
+    color: #202020;
+    border: 2px solid #202020;
+    overflow: hidden;
+}
+.tp-primary-btn-background{
+    top: 6px;
+    left: 6px;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: repeating-linear-gradient(
+    45deg,
+    #20202040,
+    #20202040 2px,
+    #fff0 2px,
+    #fff0 4px);
+    opacity: 0;
+    transition: 0.35s ease-in;
+}
+.tp-primary-btn:hover .tp-primary-btn-background{
+    opacity: 1;
+}
+.tp-btn-wrapper{
+    padding-top: 24px;
+}
+.tp-cover-bg{
+    top: 0;
+    right: 0;
+}
+.tp-trial-container{
+    padding: 80px 0;
+}
+.tp-trial-container h3.tp-title{
+    margin: 0;
+    padding-bottom: 32px;
+}
+.tp-code-wrapper{
+    border-radius: 8px;
+    background-color: #DDD;
+    width: max-content;
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 32px 0;
+    padding: 32px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Source Code Pro', monospace !important;
+}
+.tp-code-content{
+    width: max-content;
+}
+.tp-code-t1{
+    color: #8338ec;
+}
+.tp-code-t2{
+    color: #2a9d8f;
+}
+.tp-code-t3{
+    color: #ffb703;
+}
+.tp-code-t4{
+    color: #2b2d42;
+}
+.tp-code-t5{
+    color: #264653;
+}
+.tp-label{
+    font-size: 1rem;
+    line-height: 150%;
+    font-weight: 600;
+    padding-bottom: 16px;
+}
+input.tp-input{
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: #202020;
+    border: 1px solid #202020;
+}
+.t-output-wrapper input.tp-input{
+    border: none;
+    border-radius: 8px;
+    color: #202020;
+    background-color: #DDD;
+}
+.tp-content-container{
+    padding: 80px 0;
+}
+.tp-content-container .tp-code-wrapper{
+    padding: 36px 48px;
+}
+.tp-copy-btn{
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+.tp-copy-btn path{
+    transition: 0.3s ease;
+}
+.tp-copy-btn:hover path{
+    fill: #2a9d8f;
+}
+.tp-highlighted{
+    padding: 2px 4px;
+    background-color: #DDD;
+    font-weight: 500;
+    border-radius: 4px;
+}
+.tp-footer{
+    background-color: #202020;
+    color: rgba(238, 238, 238, 0.493);
+}
+.tp-copy-feedback{
+    position: absolute;
+    top: 16px;
+    right: 46px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #202020;
+    color: rgba(238, 238, 238, 0.589);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.2s ease, transform 0.8s;
+}
+.tp-copy-feedback.tp-feedback-active{
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease, transform 0.6s;
+}
+@media only screen and (max-width: 768px){
+    .tp-nav-bar{
+        padding: 24px 0;
+    }
+    .tp-btn{
+        padding: 12px 32px;
+        font-size: 16px;
+        line-height: 150%;
+    }
+    .tp-btn-wrapper{
+        padding-top: 16px;
+    }
+    .tp-trial-container, .tp-content-container{
+        padding: 40px 0;
+    }
+    .tp-code-wrapper{
+        font-size: 16px;
+        margin: 24px 0;
+    }
+}
