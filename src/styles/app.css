@@ -44,6 +44,11 @@ h3.tp-title{
     line-height: 150%;
     font-weight: 700;
 }
+p.tp-desc{
+    font-size: clamp(18px, 1rem, 16px);
+    line-height: 150%;
+    font-weight: 400;
+}
 .tp-cover-container h1.tp-title{
     font-weight: 800;
 }

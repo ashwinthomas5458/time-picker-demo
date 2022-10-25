@@ -247,6 +247,9 @@ function App() {
                 </div>
               </div>
             </div>
+            <p className="tp-desc">
+              You can import the <span className="fw-bold">TimePicker</span> from <span className="fw-bold">@ashwinthomas/react-time-picker-dropdown</span>. Currently appearance customizisation using props is limited to clock and close icon visibility, however you can use the timepicker class names to change the default appearance. Time selection using the timepicker component can also be done using a keyboard by making use of the <span className="fw-bold">arrowkeys</span> and <span className="fw-bold">enter</span> key, and an <span className="fw-bold">esc</span> key can be used to close the dropdown.
+            </p>
             <h3 className="tp-title pt-5">Props</h3>
             <div className="pt-4 w-100">
               <div className="table-responsive-lg">
@@ -298,7 +301,7 @@ function App() {
                     </tr>
                     <tr>
                       <td>showClockIcon</td>
-                      <td>showCloseIcon can be used to toggle clock icon visibility</td>
+                      <td>showClockIcon can be used to toggle clock icon visibility</td>
                       <td>true</td>
                       <td>true</td>
                     </tr>
