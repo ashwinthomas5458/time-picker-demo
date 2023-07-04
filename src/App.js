@@ -127,7 +127,7 @@ function App() {
           </svg>
           <div className="tp-container tp-cover-container d-flex flex-column justify-content-center">
             <h1 className="tp-title">React time picker dropdown.</h1>
-            <h3 className="tp-title">Time picker component for your react app.</h3>
+            <h3 className="tp-title">A simple & user-friendly Time picker component for your react app.</h3>
             <div className="tp-btn-wrapper">
               <a className="tp-btn tp-primary-btn position-relative" href="https://www.npmjs.com/package/@ashwinthomas/react-time-picker-dropdown">
                 <div className="tp-primary-btn-background position-absolute"></div>
@@ -216,6 +216,9 @@ function App() {
               </div>
             </div>
             <h3 className="tp-title pt-5">Usage</h3>
+            <p className="tp-desc">
+              Learn how to integrate the TimePicker component into your React applications seamlessly!
+            </p>
             <div className="tp-code-wrapper my-3 position-relative">
               <svg className="position-absolute tp-copy-btn" onClick={handleDataCopy} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15 1H4C2.9 1 2 1.9 2 3V16C2 16.55 2.45 17 3 17C3.55 17 4 16.55 4 16V4C4 3.45 4.45 3 5 3H15C15.55 3 16 2.55 16 2C16 1.45 15.55 1 15 1ZM19 5H8C6.9 5 6 5.9 6 7V21C6 22.1 6.9 23 8 23H19C20.1 23 21 22.1 21 21V7C21 5.9 20.1 5 19 5ZM18 21H9C8.45 21 8 20.55 8 20V8C8 7.45 8.45 7 9 7H18C18.55 7 19 7.45 19 8V20C19 20.55 18.55 21 18 21Z" fill="#323232" />
@@ -228,7 +231,7 @@ function App() {
                   <span className="tp-code-t1">import</span><span className="tp-code-t2 ps-3">TimePicker</span><span className="tp-code-t1 ps-3">from</span><span className="tp-code-t5 ps-3">"@ashwinthomas/react-time-picker-dropdown"</span><span className="tp-code-t4">;</span>
                 </div>
                 <div className="d-flex pt-1">
-                  <span className="tp-code-t1">render</span><span className="tp-code-t5">()</span><span className="tp-code-t4">{`{`}</span>
+                  <span className="tp-code-t1">return</span><span className="tp-code-t1">{`(`}</span>
                 </div>
                 <div className="d-flex pt-1 ps-4">
                   <span className="tp-code-t1">&lt;</span><span className="tp-code-t2">TimePicker</span>
@@ -243,7 +246,7 @@ function App() {
                   <span className="tp-code-t1">/</span><span className="tp-code-t1">&gt;</span>
                 </div>
                 <div className="d-flex pt-1">
-                  <span className="tp-code-t4">{`}`}</span>
+                  <span className="tp-code-t1">{`)`}</span>
                 </div>
               </div>
             </div>
