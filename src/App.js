@@ -251,8 +251,19 @@ function App() {
               </div>
             </div>
             <p className="tp-desc">
-              You can import the <span className="fw-bold">TimePicker</span> from <span className="fw-bold">@ashwinthomas/react-time-picker-dropdown</span>. Currently appearance customizisation using props is limited to clock and close icon visibility, however you can use the timepicker class names to change the default appearance. Time selection using the timepicker component can also be done using a keyboard by making use of the <span className="fw-bold">arrowkeys</span> and <span className="fw-bold">enter</span> key, and an <span className="fw-bold">esc</span> key can be used to close the dropdown.
+              You can import the <span className="fw-bold">TimePicker</span> from <span className="fw-bold">@ashwinthomas/react-time-picker-dropdown</span>. Currently appearance customizisation using props is limited to clock and close icon visibility, however you can use the timepicker class names to change the default appearance. Time selection using the timepicker component can also be done using a keyboard by making use of the <span className="fw-bold">arrowkeys</span> and <span className="fw-bold">enter</span> key, and an <span className="fw-bold">esc</span> key can be used to close the dropdown. Clicking anywhere outside the picker selects the current time and closes the dropdown.
             </p>
+            <h3 className="tp-title pt-5">TypeScript</h3>
+            <p className="tp-desc">
+              Type definitions are included with the package, and the props type is exported as <span className="fw-bold">TimePickerProps</span>. The component supports <span className="fw-bold">React 17</span>, <span className="fw-bold">18</span> and <span className="fw-bold">19</span>, and can be imported directly from React Server Components such as the Next.js App Router.
+            </p>
+            <div className="tp-code-wrapper my-3">
+              <div className="tp-code-content d-flex flex-column">
+                <div className="d-flex">
+                  <span className="tp-code-t1">import</span><span className="tp-code-t2 ps-3">TimePicker</span><span className="tp-code-t4">,</span><span className="tp-code-t3 ps-3">{`{`}</span><span className="tp-code-t1 ps-2">type</span><span className="tp-code-t2 ps-3">TimePickerProps</span><span className="tp-code-t3 ps-2">{`}`}</span><span className="tp-code-t1 ps-3">from</span><span className="tp-code-t5 ps-3">"@ashwinthomas/react-time-picker-dropdown"</span><span className="tp-code-t4">;</span>
+                </div>
+              </div>
+            </div>
             <h3 className="tp-title pt-5">Props</h3>
             <div className="pt-4 w-100">
               <div className="table-responsive-lg">
@@ -286,7 +297,7 @@ function App() {
                     </tr>
                     <tr>
                       <td>onTimeChange</td>
-                      <td>Function called when user picks a time. (Returns null if the input value is invalid.)</td>
+                      <td>Function called when user picks a time, including when the user clicks outside the picker. (Returns null if the input value is invalid.)</td>
                       <td>n/a</td>
                       <td>{`(value)=>alert("Time selected is: ", value)`}</td>
                     </tr>
